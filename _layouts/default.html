@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<html lang="en">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <meta charset=utf-8" />
+   <meta name="viewport" content="width=device-width" />
+   <meta http-equiv="Content-Language" content="en" />
+
    <title>{{ page.title }}</title>
 
-   <!--
-   <meta name="author" content="Tom Preston-Werner" />
-   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
-   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"/>
-   -->
+   <meta name="author" content="Nimalan Mahendran" />
+   <link href="http://feeds.feedburner.com/nimalan-mahendran" rel="alternate" title="Nimalan Mahendran" type="application/atom+xml" />
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
-    <!-- Typekit -->
-   <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+   <link href="/css/_normalize.css" rel="stylesheet" type="text/css" />
+   <link href="/css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? '/js/vendor/zepto' : '/js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="/js/foundation/foundation.js"></script>
+  <script src="/js/foundation/foundation.alerts.js"></script>
+  <script src="/js/foundation/foundation.clearing.js"></script>
+  <script src="/js/foundation/foundation.cookie.js"></script>
+  <script src="/js/foundation/foundation.dropdown.js"></script>
+  <script src="/js/foundation/foundation.forms.js"></script>
+  <script src="/js/foundation/foundation.joyride.js"></script>
+  <script src="/js/foundation/foundation.magellan.js"></script>
+  <script src="/js/foundation/foundation.orbit.js"></script>
+  <script src="/js/foundation/foundation.placeholder.js"></script>
+  <script src="/js/foundation/foundation.reveal.js"></script>
+  <script src="/js/foundation/foundation.section.js"></script>
+  <script src="/js/foundation/foundation.tooltips.js"></script>
+  <script src="/js/foundation/foundation.topbar.js"></script>
+  <script src="/js/foundation/foundation.interchange.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 
 <div class="site">
-  <div class="title">
-    <a href="/">Nimalan Mahendran</a>
-    <a class="extra" href="/">home</a>
-  </div>
+  <nav class="top-bar" style="">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h1><a href="/">Nimalan Mahendran</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href=""><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="left">
+      </ul>
+      <!-- Right Nav Section -->
+      <ul class="right">
+      </ul>
+    </section>
+  </nav>
 
   {{ content }}
 
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Nimalan Mahendran<br />
-        nimalan.mahendran@gmail.com
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/nybbles/">github.com/nybbles</a><br />
-        <a href="http://twitter.com/nimalan/">twitter.com/nimalan</a><br />
-      </p>
-    </div>
+
 
     <!--
     <div class="rss">
@@ -51,6 +76,29 @@
      -->
 
   </div>
+
+  <div id="root">
+    <div id="root_footer"></div>
+  </div>
+
+  <footer id="footer">
+    <div class="row">
+      <div class="large-8 columns">
+        This is a test blog.
+      </div>
+
+      <div class="large-4 columns">
+        <div class="footer">
+          <ul class="vcard">
+            <li class="fn">Nimalan Mahendran</li>
+            <li class="email"><a href="#">nimalan.mahendran@gmail.com</a></li>
+            <li class="twitter"><a href="https://twitter.com/nimalan">https://twitter.com/nimalan</a></li>
+            <li class="github"><a href="https://github.com/nybbles">https://github.com/nybbles</a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+
 </div>
 </body>
 </html>
