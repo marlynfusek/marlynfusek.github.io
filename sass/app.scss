@@ -49,3 +49,7 @@
 @import "compass/layout/sticky-footer";
 @include sticky-footer(54px);
 
+#twitter-logo {
+	width: 30px;
+	height: 30px;
+}
